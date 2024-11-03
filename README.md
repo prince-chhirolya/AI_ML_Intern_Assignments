@@ -48,4 +48,13 @@ To set up the project locally, follow these steps:
    git clone https://github.com/itmerk/Ramkumar_K_Planet_Diseases_Detection.git
    cd Ramkumar_K_Planet_Diseases_Detection
 
+2 . Install the required dependencies:
+   
+   pip install -r requirements.txt
 
+3. Download the dataset (e.g., PlantVillage) and organize it as follows:
+
+      dataset/
+   ├── Potato__Early_blight/
+   ├── Potato__healthy/
+   └── Potato__Late_blight/
