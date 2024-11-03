@@ -45,5 +45,5 @@ To set up the project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/planet-diseases-detection.git
-   cd planet-diseases-detection
+   git clone https://github.com/itmerk/Ramkumar_K_Planet_Diseases_Detection.git
+   cd Ramkumar_K_Planet_Diseases_Detection
