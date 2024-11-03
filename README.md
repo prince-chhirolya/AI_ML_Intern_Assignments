@@ -1,62 +1,60 @@
-# AI/ML Intern Candidate Assignment Project Submissions | Chhirolya Technologies
+# 🌍 Planet Diseases Detection
 
-Welcome to the **AI/ML Project Submission Repository**! This repository is dedicated to collecting and reviewing project submissions for candidates interested in AI and ML roles. Please follow the instructions below to ensure a smooth and organized submission process.
+This project is an AI-driven tool for detecting and classifying diseases affecting crops and plants based on leaf imagery. Leveraging cutting-edge deep learning techniques, this model aims to support farmers, agricultural researchers, and environmental agencies in early identification of plant diseases, enabling effective interventions to prevent crop loss and mitigate environmental impact.
 
-## Table of Contents
-- [Submission Guidelines](#submission-guidelines)
-- [Directory Structure](#directory-structure)
-- [How to Submit Your Project](#how-to-submit-your-project)
-- [Project Requirements](#project-requirements)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Contact](#contact)
+## 📝 Table of Contents
 
-## Submission Guidelines
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Data Collection](#data-collection)
+- [Model Architecture](#model-architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Future Work](#future-work)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. **Fork this Repository**: Start by forking this repository to your GitHub account.
-2. **Clone Your Forked Repository**: Clone the forked repo to your local machine to make the necessary changes.
-3. **Create a New Folder**: Name the folder in the format `FirstName_LastName_ProjectName` (e.g., `Prince_Chhirolya_ImageClassifier`).
-4. **Add Your Project Files**: Include all relevant files, scripts, and documentation in your folder. Make sure to add a README.md with project details.
-5. **Submit a Pull Request**: Once you’ve added your project files, create a pull request (PR) with a descriptive title and short summary.
+## 🌱 Project Overview
 
-## Directory Structure
+Planet Diseases Detection uses a Convolutional Neural Network (CNN) to identify plant diseases from leaf images. By training on open-source plant disease datasets, the model can classify several common diseases across multiple plant species. This tool can aid in diagnosing plant health and automating disease detection processes, contributing to smarter and more sustainable agriculture.
 
-Your folder should have the following structure: </br>
-AI-ML-Project-Submissions/ </br>
-├── FirstName_LastName_ProjectName/ </br>
-│   ├── README.md           # Project overview and instructions </br>
-│   ├── src/                # Source code files </br>
-│   ├── data/               # (Optional) Dataset files or links </br>
-│   ├── requirements.txt    # Dependencies </br>
-│   ├── notebook.ipynb      # Jupyter Notebook if applicable </br>
-│   └── results/            # Any output files, plots, or analysis </br>
+## ✨ Features
 
+- **Automated Disease Detection**: Classifies leaf images to identify plant diseases with high accuracy.
+- **Multi-Class Classification**: Identifies multiple diseases across different plant species.
+- **Scalable Model**: Model can be extended to include additional plant species and diseases.
+- **User-Friendly Interface**: (Optional) Streamlit or Flask-based interface for image upload and diagnosis.
+- **Open-Source and Expandable**: Community-driven and adaptable to different datasets.
 
-## How to Submit Your Project
+## 📂 Data Collection
 
-1. Ensure all your files are included in the project folder.
-2. Double-check the naming convention and folder structure.
-3. Commit your changes with a meaningful message.
-4. Push the changes to your forked repository.
-5. Create a Pull Request (PR) to this repository.
+This project leverages the [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease) and similar open-source datasets, which contain labeled images of various plant leaves under healthy and diseased conditions. The dataset is split into training, validation, and testing sets for model evaluation.
 
-## Project Requirements
+## 🧠 Model Architecture
 
-- **Code**: Write clear, well-documented, and modular code.
-- **Documentation**: Include a `README.md` that describes your project, methods, and results.
-- **Reproducibility**: Ensure all dependencies are listed in `requirements.txt`.
-- **Data Handling**: For large datasets, provide a link rather than uploading files directly.
+The model is built using a Convolutional Neural Network (CNN) architecture optimized for image classification tasks. Key layers and techniques include:
 
-## Evaluation Criteria
+- **Data Augmentation**: Increases dataset variability through transformations (e.g., rotation, flipping).
+- **Transfer Learning**: Pre-trained models such as ResNet, EfficientNet, or MobileNet can be fine-tuned for this task.
+- **Optimization**: Model trained with Adam optimizer and cross-entropy loss function.
 
-Your project will be evaluated on:
-- **Code Quality**: Readability, structure, and documentation.
-- **Project Completeness**: Adherence to requirements and overall completeness.
-- **Innovation & Approach**: Problem-solving skills and approach.
-- **Results & Analysis**: Accuracy, clarity of results, and insightful analysis.
+## 🛠️ Installation
 
-## Contact
+To set up the project locally, follow these steps:
 
-If you have questions, please contact info@chhirolya.tech or post your query in the issues section.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/itmerk/Ramkumar_K_Planet_Diseases_Detection.git
+   cd Ramkumar_K_Planet_Diseases_Detection
 
+2 . Install the required dependencies:
+   
+   pip install -r requirements.txt
 
+3. Download the dataset (e.g., PlantVillage) and organize it as follows:
 
+      dataset/
+   ├── Potato__Early_blight/
+   ├── Potato__healthy/
+   └── Potato__Late_blight/
