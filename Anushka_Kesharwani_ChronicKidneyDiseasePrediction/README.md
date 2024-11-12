@@ -39,10 +39,11 @@ The results of the project are as follows:
 - **Final Model**: The best Random Forest model is saved and can be loaded later for making predictions on new data.
 
 ## Requirements
--jupyter
 - pandas
 - scikit-learn
 - joblib
+- jupyter
+- seanborn
 
 
 
