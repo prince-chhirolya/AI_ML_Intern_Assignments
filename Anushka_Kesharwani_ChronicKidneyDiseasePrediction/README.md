@@ -43,7 +43,8 @@ The results of the project are as follows:
 - scikit-learn
 - joblib
 - jupyter
-- seanborn
+- seaborn
+- python 3
 
 
 
