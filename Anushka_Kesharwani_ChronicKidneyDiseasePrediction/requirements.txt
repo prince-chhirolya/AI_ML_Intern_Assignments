@@ -1,0 +1,9 @@
+This project requires the following Python packages:
+
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+joblib
