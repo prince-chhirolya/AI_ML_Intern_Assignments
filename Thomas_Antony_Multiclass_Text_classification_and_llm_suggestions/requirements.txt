@@ -1,0 +1,12 @@
+ctransformers
+langchain
+python-box
+streamlit
+sentence-transformers
+uvicorn
+langchain-community
+langchain-core
+ipykernel
+tensorflow==2.17.0
+scikit-learn
+transformers
